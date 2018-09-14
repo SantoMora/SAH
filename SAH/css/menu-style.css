@@ -1,0 +1,159 @@
+*{
+	margin: 0;
+	padding: 0;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+header{
+	width: 100%;
+	height: 20%;
+	min-height: 50px;
+	background: #1e272e;
+}
+
+header h1{
+	float: left;
+	padding: 15px;
+	color: #fff;
+}
+
+header .icono{
+	color: #fff;
+	font-size: 25pt;
+	float: right;
+	margin: 10px 25px;
+}
+
+header .menu{
+	float: right;
+	width: 20%;
+}
+
+header ul{
+	list-style: none;
+}
+
+header .menu li a{
+	color: #fff;
+	display: block;
+	padding: 15px 20px;
+}
+
+header .menu ul{
+	display: none;
+}
+
+body{
+	background: #fff;
+	font-family: 'Roboto', sans-serif;
+	line-height: 18px;
+}
+
+a{
+	text-decoration: none;
+	color: #fff
+}
+
+.btn-menu{
+	background: #1e272e;
+	color: #fff;
+	display: none;
+	padding: 20px;
+}
+
+.btn-menu .icono{
+	float: left;
+}
+
+#Sidebar{
+	position: fixed;
+	float: left;
+	background: #485460;
+	display: block;
+	height: 100%;
+	width: 20%;
+	min-width: 300px;
+}
+.contenedor-menu{
+	width: 100%;
+	font-family: 'Roboto', sans-serif;
+	line-height: 18px;
+}
+
+.contenedor-menu .menu{
+	width: 100%;
+}
+
+.contenedor-menu ul{
+	list-style: none;
+}
+
+.contenedor-menu .menu li a{
+	color: #fff;
+	display: block;
+	padding: 15px 20px;
+	background: #485460;
+}
+
+.contenedor-menu .menu li a:hover{
+	background: #1A95D5;
+	color: #fff;
+}
+
+.contenedor-menu .menu .icono{
+	font-size: 12px;
+	line-height: 18px;
+}
+
+.contenedor-menu .menu .icono.izquierda{
+	float: left;
+	margin-right: 10px;
+}
+
+
+.contenedor-menu .menu .icono.derecha{
+	float: right;
+	margin-left: 10px;
+}
+
+.contenedor-menu .menu ul{
+	display: none;
+}
+
+
+.contenedor-menu .menu ul li a{
+	background: #424242;
+	color: #E9E9E9;
+}
+
+.contenedor-menu .menu .activado > a{
+	background: #1A95D5;
+	color: #fff;
+}
+
+@media screen and (max-width: 450px){
+	body{
+		padding-top: 80px;
+	}
+
+	.contenedor-menu{
+		margin: 0;
+		width: 100%;
+		position: fixed;
+		top: 0;
+		z-index: 1000;
+	}
+
+	.btn-menu{
+		display: block;
+	}
+	.contenedor-menu .menu{
+		display: none;
+	}
+
+	#Sidebar{
+		display: block;
+	}
+}
